@@ -26,11 +26,11 @@ public class Supermercado {
 	}
 
 	public void mostrarProductoMasCaroPorPantalla() {
-		ordenarProductosAscendentePorPrecio();
 		System.out.println("Producto más caro: " + getProductoMasCaro().getNombre());
 	}
 
 	public Producto getProductoMasCaro() {
+		ordenarProductosAscendentePorPrecio();
 		return productos.get(ultimoProductoDeLaLista());
 	}
 
@@ -39,11 +39,11 @@ public class Supermercado {
 	}
 
 	public void mostrarProductoMasBaratoPorPantalla() {
-		ordenarProductosAscendentePorPrecio();
 		System.out.println("Producto más barato: " + getProductoMasBarato().getNombre());
 	}
 
 	public Producto getProductoMasBarato() {
+		ordenarProductosAscendentePorPrecio();
 		return productos.get(0);
 	}
 
